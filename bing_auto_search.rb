@@ -11,6 +11,8 @@ def search_bing
   `open http://bing.com/search?q=#{generate_query}`
 end
 
-30.times do
+iterations = ARGV.first.to_i
+
+iterations.times do
   search_bing
 end
